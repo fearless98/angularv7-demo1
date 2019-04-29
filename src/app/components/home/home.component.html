@@ -1,0 +1,47 @@
+<h1>条件判断语句*ngSwitch</h1>
+<ul [ngSwitch]="orderStatus">
+	<p *ngSwitchCase="1">
+		已支付
+	</p>
+	<p *ngSwitchCase="2">
+		确认订单
+	</p>
+	<p *ngSwitchCase="3">
+		已发货
+	</p>
+	<p *ngSwitchCase="4">
+		已收货
+	</p>
+	<p *ngSwitchDefault>
+		无效
+	</p>
+</ul>
+
+<h1>属性[ngClass],[ngStyle]</h1>
+<p>尽量不使用dom操作来改变属性</p>
+<div class="red">
+	ngClass演示
+</div>
+
+<hr>
+<div [ngClass]="{'blue':true,'red':false}">
+	ngClass演示
+</div>
+
+<hr>
+<div [ngClass]="{'orange':flag,'red':!flag}">
+	ngClass演示
+</div>
+
+<strong>循环数组，让数组的第一个元素为orange</strong>
+<ul>
+	<li *ngFor="let item of list;let key=index;" [ngClass]="{'orange':key==1,'red':key==0,'blue':key==2}">
+		{{key}}-----{{item.title}}-----{{item.price}}
+	</li>
+</ul>
+
+<p [ngStyle]="{'color':'red'}">标签</p>
+<p [ngStyle]="{'color':attr}">标签</p>
+
+<h1>管道</h1>
+{{today | date : 'yyyy-mm-dd HH:mm:ss'}}
