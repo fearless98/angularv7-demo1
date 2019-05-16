@@ -1,0 +1,21 @@
+.search {
+    width: 400px;
+    margin: 20px auto;
+}
+
+input {
+    width: 166px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 5px;
+}
+
+.search-btn {
+    width: 50px;
+    height: 27px;
+}
+
+ul li {
+    list-style: none;
+}

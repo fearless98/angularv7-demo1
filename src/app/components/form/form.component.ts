@@ -35,8 +35,6 @@ export class FormComponent implements OnInit {
     // console.log(usernameDom.value);
 
     //方法二：双向数据绑定
-  // console.log(this.peopleInfo.gender);
-  // console.log(this.peopleInfo.city);
   console.log(this.peopleInfo);
   
   }
