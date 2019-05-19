@@ -1,0 +1,19 @@
+.toDoList {
+    width: 400px;
+    margin: 15px auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-input {
+    width: 166px;
+    height: 20px;
+    margin-left: 120px;
+    margin-right: 5px;
+}
+
+ul li {
+    list-style: none;
+}
