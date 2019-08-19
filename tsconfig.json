@@ -1,4 +1,5 @@
 {
+  "autoFixOnSave": true,
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",

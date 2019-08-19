@@ -7,14 +7,14 @@ export class StorageService {
 
   constructor() { }
 
-  //设置数据
-  set(key: string, value: any){
+  // 设置数据
+  set(key: string, value: any) {
     localStorage.setItem(key, JSON.stringify(value));
   }
-  get(key: string){
+  get(key: string) {
     return JSON.parse(localStorage.getItem(key));
   }
-  remove(key: string){
+  remove(key: string) {
     localStorage.removeItem(key);
   }
 }
